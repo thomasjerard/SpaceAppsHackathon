@@ -61,7 +61,7 @@ body{
 /* :vertical timeline   */
 
 #VerticalTimeLine{
-    padding: 100px;
+    padding: 25px 0px 75px;
 }
 
 /* The actual timeline (the vertical ruler) */
