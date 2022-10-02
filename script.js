@@ -65,13 +65,13 @@ const resolver = {
    * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
    */
   const strings = [
-    'Oh thank god, you\'re alright.',
-    'Goodbye, Caroline.',
-    'Killing you? Is hard.',
-    'And then you showed up. You dangerous, mute lunatic. So you know what?',
-    'You win.',
-    'Just go.',
-    'It\'s been fun. Don\'t come back.',
+    'Thats one small step for a man, one giant leap for mankind.',
+    'Across the sea of space, the stars are other suns.',
+    'Curiosity is the essence of our existence.',
+    'We are limited only by our imagination and our will to act.',
+    'Earth is the cradle of humanity, but one cannot live in a cradle forever.',
+    'Somewhere, something incredible is waiting to be known.',
+    '......',
     '......'
   ];
   
