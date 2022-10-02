@@ -1,0 +1,319 @@
+body{
+    background-color: black;
+    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: repeat;
+    /* background-image:url("/gifs/backgrndImg.jpeg") ; */
+}    
+
+/* navigation bar section */
+#nav-bar{
+    background-color: rgba(43, 38, 38);
+    padding: 0px 50px 0px 50px;
+}
+.navbar{
+  background-color: rgba(43, 38, 38,0.5);
+
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left:16px
+}
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: Montserrat;
+}
+
+/* Title section*/
+
+#Title{
+  margin-top:85px;
+}
+
+.block{
+    width:60wv;
+    height: 600px;
+    float : right;
+}
+
+
+.gif2{
+    /* background-image: url("/gifs/ParkerPerihelion13_8.31.2022.gif");
+    background-size: contain; */
+    background-color: black;
+    float:left;
+    opacity: 0.6;
+}
+.image1{
+    height: 570px;
+   object-fit: contain; 
+}
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0,0.5);
+  }
+  
+  .heading {
+    color: #eee;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Unica One', sans-serif;
+    
+  }
+
+@media screen and (max-width: 1125px) {
+
+  .container1{
+    position: relative;
+    top: -600px;
+    background-color: rgba(0, 0, 0,0.5);
+  }
+  .heading {
+    color: rgb(43, 27, 27);
+    font-weight: 800;
+  }
+  #Title{
+    height: 600px;
+  }
+}
+  
+/* :vertical timeline   */
+
+/* section {
+	padding: 100px 0;
+  } */
+  
+  html,
+  body {
+	overflow-x: hidden;
+  }
+/*   
+  body {
+	font-family: "Roboto";
+	font-size: 17px;
+	font-weight: 400;
+	background-color: #eee;
+  } */
+  
+  /* h1 {
+	font-size: 200%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+  } */
+
+  .timeline {
+	position: relative;
+  }
+  .timeline::before {
+	content: "";
+	background: #c5cae9;
+	width: 5px;
+	height: 95%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+	width: 100%;
+	margin-bottom: 70px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+	float: right;
+	padding: 40px 30px 10px 30px;
+  }
+  .timeline-item:nth-child(even) .timeline-content .date {
+	right: auto;
+	left: 0;
+  }
+  .timeline-item:nth-child(even) .timeline-content::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	width: 0;
+	height: 0;
+	top: 30px;
+	left: -15px;
+	border-width: 10px 15px 10px 0;
+	border-color: transparent #f5f5f5 transparent transparent;
+  }
+  .timeline-item::after {
+	content: "";
+	display: block;
+	clear: both;
+  }
+  
+  .timeline-content {
+	position: relative;
+	width: 45%;
+	padding: 10px 30px;
+	border-radius: 4px;
+	background: #f5f5f5;
+	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  }
+  .timeline-content::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	width: 0;
+	height: 0;
+	top: 30px;
+	right: -15px;
+	border-width: 10px 0 10px 15px;
+	border-color: transparent transparent transparent #f5f5f5;
+  }
+  
+  .timeline-img {
+	width: 30px;
+	height: 30px;
+	background: grey;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-top: 25px;
+	margin-left: -15px;
+  }
+  
+  a.bnt-more {
+	background: grey;
+	color: #ffffff;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+  }
+  a.bnt-more:hover, a.bnt-more:active, a.bnt-more:focus {
+	background: grey;
+	color: #ffffff;
+	text-decoration: none;
+  }
+  
+  .timeline-card {
+	padding: 0 !important;
+  }
+  .timeline-card p {
+	padding: 0 20px;
+  }
+  .timeline-card a {
+	margin-left: 20px;
+  }
+  
+  .timeline-item .timeline-img-header {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://solarsystem.nasa.gov/system/content_pages/main_images/1708_Parker-Solar-Probe_ObservingSun_1280.jpg") center center no-repeat;
+	background-size: cover;
+  }
+  
+  .timeline-img-header {
+	height: 200px;
+	position: relative;
+	margin-bottom: 20px;
+  }
+  .timeline-img-header h2 {
+	color: #ffffff;
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+  }
+  
+  blockquote {
+	margin-top: 30px;
+	color: #757575;
+	border-left-color: grey;
+	padding: 0 20px;
+  }
+  
+  .date {
+	background:rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	color: #ffffff;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.timeline::before {
+	  left: 50px;
+	}
+	.timeline .timeline-img {
+	  left: 50px;
+	}
+	.timeline .timeline-content {
+	  max-width: 100%;
+	  width: auto;
+	  margin-left: 70px;
+	}
+	.timeline .timeline-item:nth-child(even) .timeline-content {
+	  float: none;
+	}
+	.timeline .timeline-item:nth-child(odd) .timeline-content::after {
+	  content: "";
+	  position: absolute;
+	  border-style: solid;
+	  width: 0;
+	  height: 0;
+	  top: 30px;
+	  left: -15px;
+	  border-width: 10px 15px 10px 0;
+	  border-color: transparent #f5f5f5 transparent transparent;
+	}
+  }
+
+/* testimonials */
+
+#testimonials {
+    background-color: rgba(43, 38, 38,0.5);
+    color: white;
+    clear: both;
+    font-family: "Montserrat", sans-serif;
+    font-size: bold;
+    text-align: center;
+  }
+  .carousel-item {
+    padding: 7% 10%;
+  }
+  .testimonial-image {
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  .testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-size: bold;
+    text-align: center;
+  }
+
+
+/* contact section */
+
+/* footer */
+#footer{
+    text-align: center;
+    padding: 7% 10% 3%;
+    background-color: rgb(0, 0, 0);
+    clear: both;
+  }
+  i{
+    color: rgb(78, 79, 80);
+  }
+  .footer_icon{
+    padding: 3%;
+}
